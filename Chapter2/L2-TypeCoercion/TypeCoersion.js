@@ -39,7 +39,9 @@ a8.innerText = tripleEquals("5", "5");
  * @param b
  */
 function doubleEquals(a, b){
+    return a == b;
 //    code here
+
 }
 /**
  * TODO: use the === operator to return the boolean result of an equality comparison for a and b that also checks for
@@ -49,5 +51,6 @@ function doubleEquals(a, b){
  * @param b
  */
 function tripleEquals(a, b){
+    return a === b;
 //    code here
 }

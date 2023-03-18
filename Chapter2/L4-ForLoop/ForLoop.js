@@ -19,5 +19,12 @@ button.onclick = getSum;
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
  */
 function getSum(){
+
+    var count = 0;
     let val = parseInt(input.value);
+    for(let i = 0; i < val; i++){
+        // code here
+        count += i;
+
+    } result.innerText = count;
 }

@@ -15,6 +15,8 @@ displayUserObject(user);
  * as the username & password values.
  */
 function returnUserObject(inputUsername, inputPassword){
+    return {username: inputUsername, password: inputPassword};
+    
 //    code here
 }
 

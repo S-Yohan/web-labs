@@ -22,6 +22,15 @@
    * representing the current value in your code.
    */
   var currentCount = 0;
+
+  let count = document.getElementById("count");
+  let button = document.getElementById("button");
+    button.onclick = buttonClicked;
+
+    function buttonClicked() {
+        currentCount++;
+        count.innerText = currentCount;
+    }
 </script>
 </body>
 </html>

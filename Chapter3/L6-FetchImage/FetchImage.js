@@ -21,3 +21,20 @@
  * After retrieving that image, you should append a new img element, which should use the image download_url as its src.
  * (the 'url' property doesn't link directly to the image, but 'download_url' does)
  */
+
+let input = document.getElementById("input");
+let button = document.getElementById("button");
+let content = document.getElementById("content");
+button.onclick = displayImage;
+
+function displayImage() {
+    let url = 'https://picsum.photos/id/' + input.value + '/info';
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            let img = document.createElement('img');
+            img.src = data.download_url;
+            content.replaceChildren(img);
+        })              
+
+}
